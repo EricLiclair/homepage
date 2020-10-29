@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   display: flex;
+  overflow: hidden;
 }
 
 .columns {
@@ -36,6 +37,7 @@
 }
 
 .icon-holder {
+  z-index: 3;
   height: 45px;
   display: flex;
   width: 45px;
@@ -77,12 +79,6 @@
   top: 45px;
 }
 
-.material-icons.app-icon {
-}
-
-.btn:not(:disabled):not(.disabled) {
-}
-
 .gmail {
   position: absolute;
   right: 45px;
@@ -115,6 +111,7 @@
 }
 
 .todo {
+  z-index: 1;
   height: 325px;
   width: 275px;
   background-color: #ffffff;
@@ -154,6 +151,53 @@
   overflow: hidden;
 }
 
-.todo-message:hover {
+/* this part is for the background graphics */
+
+.graphic {
+  position: absolute;
+  left: -100%;
+  transition: ease-out 800ms;
 }
 
+
+
+
+/* this for the filter for mobile version */
+
+.filter {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffb633;
+}
+
+.counter {
+  font-family: monospace;
+}
+
+
+@media screen and (max-width: 768px) {
+  .main-section {
+    display: none;
+  }
+  .filter {
+    display: flex;
+  }
+}
+
+
+.todo-container {
+  transform: translate(20%, 0);
+}
+
+.endText {
+  position: absolute;
+  right: 1%;
+  bottom: 1%;
+
+  font-size: 12px;
+  font-family: monospace;
+  color: #1a1a1a;
+}

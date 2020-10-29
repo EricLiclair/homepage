@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Homepage</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="./icon.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
@@ -23,17 +26,54 @@
                 <p style="font-size: 65px;color: rgb(255,182,51);">I'm Shubham</p>
                 <p style="font-size: 30px;color: rgb(255,255,255);">Freelance web Designer<br>&amp; Developer</p>
             </div>
-            <div class="shortcuts-container"><a class="icon-holder" href="https://github.com/" style="border-width: 1px;border-style: solid;"><i class="fa fa-github shortcut-icon"></i></a><a class="icon-holder" href="https://www.google.com/" style="border-width: 1px;border-style: solid;"><i class="fa fa-google shortcut-icon"></i></a>
-                <a
-                    class="icon-holder" href="https://www.youtube.com/" style="border-width: 1px;border-style: solid;"><i class="fa fa-youtube-play shortcut-icon"></i></a><a class="icon-holder icon-spotify" href="https://open.spotify.com/" style="border-width: 1px;border-style: solid;"><i class="fa fa-spotify shortcut-icon"></i></a></div>
+            <div class="shortcuts-container">
+                <a id="github-trigger" class="icon-holder" href="https://github.com/" style="border-width: 1px;border-style: solid;"><i class="fa fa-github shortcut-icon"></i></a>
+                <a id="google-trigger" class="icon-holder" href="https://www.google.com/" style="border-width: 1px;border-style: solid;"><i class="fa fa-google shortcut-icon"></i></a>
+                <a id="youtube-trigger" class="icon-holder" href="https://www.youtube.com/" style="border-width: 1px;border-style: solid;"><i class="fa fa-youtube-play shortcut-icon"></i></a>
+                <a id="spotify-trigger" class="icon-holder icon-spotify" href="https://open.spotify.com/" style="border-width: 1px;border-style: solid;"><i class="fa fa-spotify shortcut-icon"></i></a>
+            </div>
+            <svg class="graphic" id="github" width="446" height="446" viewBox="0 0 446 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M149.176 359.119C149.176 360.963 147.108 362.439 144.5 362.439C141.533 362.715 139.465 361.24 139.465 359.119C139.465 357.274 141.533 355.798 144.141 355.798C146.838 355.522 149.176 356.997 149.176 359.119ZM121.211 354.968C120.582 356.813 122.38 358.934 125.078 359.487C127.416 360.41 130.113 359.487 130.653 357.643C131.192 355.798 129.484 353.677 126.786 352.847C124.448 352.202 121.841 353.124 121.211 354.968ZM160.956 353.401C158.348 354.046 156.55 355.799 156.819 357.92C157.089 359.764 159.427 360.963 162.125 360.317C164.732 359.672 166.531 357.92 166.261 356.075C165.991 354.323 163.563 353.124 160.956 353.401ZM220.123 0C95.4044 0 0 97.1114 0 225.025C0 327.301 62.7637 414.822 152.413 445.624C163.923 447.745 167.969 440.46 167.969 434.465C167.969 428.747 167.7 397.207 167.7 377.84C167.7 377.84 104.756 391.673 91.5379 350.357C91.5379 350.357 81.2871 323.52 66.5403 316.603C66.5403 316.603 45.9488 302.124 67.979 302.401C67.979 302.401 90.3689 304.246 102.688 326.195C122.38 361.793 155.381 351.556 168.239 345.469C170.307 330.714 176.152 320.477 182.626 314.39C132.361 308.672 81.6468 301.202 81.6468 212.483C81.6468 187.122 88.4806 174.395 102.868 158.163C100.53 152.169 92.8867 127.453 105.206 95.5436C123.999 89.5491 167.25 120.444 167.25 120.444C185.234 115.279 204.567 112.605 223.719 112.605C242.872 112.605 262.205 115.279 280.189 120.444C280.189 120.444 323.44 89.4569 342.233 95.5436C354.552 127.545 346.909 152.169 344.571 158.163C358.958 174.487 367.77 187.214 367.77 212.483C367.77 301.479 314.808 308.58 264.543 314.39C272.815 321.676 279.829 335.509 279.829 357.182C279.829 388.261 279.559 426.718 279.559 434.281C279.559 440.275 283.696 447.561 295.115 445.44C385.035 414.822 446 327.301 446 225.025C446 97.1114 344.841 0 220.123 0ZM87.4016 318.079C86.2327 319.001 86.5024 321.122 88.031 322.875C89.4698 324.35 91.5379 324.996 92.7069 323.797C93.8758 322.875 93.606 320.754 92.0774 319.001C90.6387 317.526 88.5706 316.88 87.4016 318.079ZM77.6903 310.609C77.0609 311.808 77.9601 313.283 79.7585 314.206C81.1972 315.128 82.9956 314.851 83.625 313.56C84.2544 312.361 83.3552 310.886 81.5569 309.963C79.7585 309.41 78.3198 309.687 77.6903 310.609ZM106.824 343.441C105.385 344.639 105.925 347.406 107.993 349.158C110.061 351.28 112.669 351.556 113.838 350.081C115.007 348.882 114.467 346.115 112.669 344.363C110.691 342.242 107.993 341.965 106.824 343.441ZM96.5734 329.884C95.1347 330.806 95.1347 333.204 96.5734 335.325C98.0121 337.446 100.44 338.368 101.609 337.446C103.048 336.247 103.048 333.849 101.609 331.728C100.35 329.607 98.0121 328.685 96.5734 329.884Z" fill="#FFB633" fill-opacity="0.05"/>
+            </svg>
+            <svg class="graphic" id="google" width="423" height="446" viewBox="0 0 423 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M422.021 228.215C422.021 355.451 338.223 446 214.47 446C95.8196 446 0 346.369 0 223C0 99.6306 95.8196 0 214.47 0C272.238 0 320.84 22.0302 358.286 58.3577L299.912 116.715C223.55 40.104 81.5505 97.6524 81.5505 223C81.5505 300.78 141.308 363.814 214.47 363.814C299.393 363.814 331.218 300.51 336.234 267.69H214.47V190.989H418.649C420.638 202.408 422.021 213.379 422.021 228.215Z" fill="#FFB633" fill-opacity="0.05"/>
+            </svg>
+            <svg class="graphic" id="youtube" width="446" height="385" viewBox="0 0 446 385" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M436.68 60.2183C431.551 36.515 416.438 17.8471 397.249 11.5119C362.468 0 223 0 223 0C223 0 83.5326 0 48.7507 11.5119C29.5619 17.8481 14.449 36.515 9.3196 60.2183C0 103.182 0 192.821 0 192.821C0 192.821 0 282.46 9.3196 325.424C14.449 349.127 29.5619 367.017 48.7507 373.353C83.5326 384.864 223 384.865 223 384.865C223 384.865 362.467 384.864 397.249 373.353C416.438 367.017 431.551 349.127 436.68 325.424C446 282.46 446 192.821 446 192.821C446 192.821 446 103.182 436.68 60.2183ZM177.386 274.207V111.435L293.954 192.823L177.386 274.207Z" fill="#FFB633" fill-opacity="0.05"/>
+            </svg>
+            <svg class="graphic" id="spotify" width="423" height="446" viewBox="0 0 423 446" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M211.027 0C94.5366 0 0 99.9004 0 223C0 346.1 94.5366 446 211.027 446C327.517 446 422.054 346.1 422.054 223C422.054 99.9004 327.517 0 211.027 0ZM296.714 328.116C293.14 328.116 290.928 326.947 287.609 324.879C234.512 291.069 172.736 289.63 111.725 302.848C108.407 303.748 104.067 305.186 101.599 305.186C93.3453 305.186 88.1548 298.263 88.1548 290.979C88.1548 281.717 93.3453 277.311 99.7272 275.873C169.417 259.597 240.639 261.036 301.394 299.431C306.585 302.938 309.648 306.085 309.648 314.268C309.648 322.451 303.606 328.116 296.714 328.116ZM319.604 269.129C315.179 269.129 312.201 267.061 309.137 265.352C255.955 232.082 176.65 218.684 106.109 238.916C102.025 240.085 99.8123 241.254 95.9832 241.254C86.8784 241.254 79.4754 233.431 79.4754 223.809C79.4754 214.188 83.9002 207.804 92.6646 205.196C116.32 198.182 140.486 192.967 175.884 192.967C231.108 192.967 284.461 207.444 326.496 233.88C333.388 238.196 336.111 243.771 336.111 251.594C336.026 261.306 328.879 269.129 319.604 269.129ZM345.982 200.61C341.557 200.61 338.834 199.441 335.005 197.103C274.42 158.887 166.099 149.716 95.9832 170.397C92.9199 171.296 89.0908 172.735 85.0064 172.735C73.7743 172.735 65.1801 163.473 65.1801 151.514C65.1801 139.285 72.3277 132.361 79.986 130.023C109.938 120.762 143.464 116.356 179.968 116.356C242.085 116.356 307.18 130.023 354.746 159.337C361.383 163.383 365.723 168.958 365.723 179.659C365.723 191.888 356.363 200.61 345.982 200.61Z" fill="#FFB633" fill-opacity="0.05"/>
+            </svg>
+                
+                
+                
+                
+
+
         </div>
         <div class="columns right-column"><a class="gmail" href="https://mail.google.com/mail/u/0/#inbox" style="font-family: Roboto, sans-serif;font-size: 16px;">Gmail</a>
             <div class="todo" style="box-shadow: 10px 10px 10px rgba(0,0,0,0.15), -5px -5px 40px rgba(33,37,0,0.15);"><span class="todo-header" style="font-family: Poppins, sans-serif;color: rgba(26,26,26,0.5);font-size: 12px;">A quick message board</span><textarea id="textContainer" class="todo-message" style="font-size: 14px;color: rgb(72,72,72);font-family: 'Roboto Mono', monospace;text-align: left;box-shadow: inset 0px 5px 10px rgba(0,0,0,0.05);"></textarea>
                 <div
-                    id="close" class="todo-closer"></div>
-        </div>
+                    id="close" class="todo-closer">
+                </div>
+
+            </div>
+
+            
+                
         </div>
     </section>
+    <div class="filter">
+        <div class="todo-container">
+            <div class="todo" style="box-shadow: 10px 10px 10px rgba(0,0,0,0.15), -5px -5px 40px rgba(33,37,0,0.15);"><span class="todo-header" style="font-family: Poppins, sans-serif;color: rgba(26,26,26,0.5);font-size: 12px;">A quick message board</span><textarea id="textContainer" class="todo-message" style="font-size: 14px;color: rgb(72,72,72);font-family: 'Roboto Mono', monospace;text-align: left;box-shadow: inset 0px 5px 10px rgba(0,0,0,0.05);"></textarea>
+                <div
+                    id="close" class="todo-closer">
+                </div>
+    
+            </div>
+        </div>
+        <p class="endText">This page is only for desktops and laptops.</p>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="./index.js"></script>
