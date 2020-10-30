@@ -16,7 +16,7 @@ Finally I decided to build one for myself.
 **github.com** (imagine what it would be without github ❤)<br>
 **google.com** (just in case I am on a different browser)<br>
 **youtube.com** (learning should never stop)<br>
-**youtube.com** (melody keeps me going)
+**spotify.com** (melody keeps me going)
 - Next is a message board which works in handy for certain notes or quick todo tasks.<br>
 > This can store secret texts too, and because the data is stored in the local storage of your pc/laptop, someone on the web can not see it<br>(do not keep your crush's name there 😂) Go ahead to the `index.js` and find out how the secret storage works ✌
 - Next is quick links to **gmail** and **chrome-apps** (do not forget to change the link to apps to `chrome://apps`)
